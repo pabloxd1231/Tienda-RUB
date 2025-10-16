@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda RUB - Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h1>Tienda RUB</h1>
+    <button onclick="showLogin()">Login</button>
+    <button onclick="showRegister()">Register</button>
+
+    <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPass" placeholder="Contraseña" required>
+        <button type="button" onclick="login()">Entrar</button>
+    </form>
+
+    <form id="registerForm" style="display:none;">
+        <input type="email" id="regEmail" placeholder="Email" required>
+        <input type="password" id="regPass" placeholder="Contraseña" required>
+        <button type="button" onclick="register()">Registrar</button>
+    </form>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

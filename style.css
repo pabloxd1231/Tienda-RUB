@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #a8edea, #fed6e3);
+    color: #333;
+    padding: 20px;
+}
+
+/* Card central para login/registro */
+.card {
+    background: #ffffffcc;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-5px); }
+
+/* Botones modernos */
+button {
+    padding: 12px 25px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #f83600, #f9d423);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Inputs estilizados */
+input {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    transition: 0.3s;
+}
+input:focus {
+    border-color: #f83600;
+    outline: none;
+    box-shadow: 0 0 10px rgba(248,54,0,0.4);
+}
+
+/* Productos */
+#products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+#products div {
+    background: #ffffffcc;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+}
+#products div:hover { transform: translateY(-5px); }
+
+/* Carrito */
+#cart div {
+    background: #fff8cc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+#cart div:hover { background: #fff1a8; }
+
+/* Checkout QR */
+#qr {
+    margin-top: 25px;
+    text-align: center;
+}
+#qr p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f83600;
+    margin-top: 10px;
+}
+
+/* Encabezados */
+h1, h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f83600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .card { margin: 20px 10px; padding: 25px; }
+    #products { grid-template-columns: 1fr; }
+}
